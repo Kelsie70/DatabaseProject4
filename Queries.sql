@@ -4,3 +4,16 @@ SELECT name FROM dbms4.students WHERE id = 5101;
 
 -- Query 2
 SELECT name FROM dbms4.students WHERE id < 15000 AND id > 10000;
+
+-- Query 3
+SELECT name FROM students s, transcript t WHERE s.id = t.studId AND t.crsCode = 'crsCode394193';
+
+-- Query 4
+SELECT s.name FROM students s, transcript t, teaching h, professors p WHERE 
+s.id = t.studId
+AND t.semester = h.semester
+AND t.crsCode = h.crsCode
+AND h.profId = p.id
+AND p.name = 'name296707';
+
+
