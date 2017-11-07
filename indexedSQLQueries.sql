@@ -44,7 +44,11 @@ ON db_project_4.courses (deptId);
 SELECT name
 FROM db_project_4.students
 USE INDEX(stud_id)
+<<<<<<< HEAD
 WHERE id = 12345;
+=======
+WHERE id = 62053;
+>>>>>>> 57681ff3597fada49e7b79b78acdd524de6b7549
 
 SELECT name
 FROM db_project_4.students
