@@ -1,4 +1,4 @@
-studId, crsCode, semester, grade
+studId, crsCode, semester, grade,
 9976,crsCode76920,semester26272,grade68674,
 41658,crsCode99077,semester75917,grade93975,
 22519,crsCode86329,semester19425,grade95992,
@@ -9999,8 +9999,6 @@ studId, crsCode, semester, grade
 97833,crsCode97124,semester53786,grade12299,
 11629,crsCode80516,semester16116,grade97031,
 98,crsCode50577,semester36287,grade12883,
-=======
-studId, crsCode, semester, grade
 585781,crsCode110918,semester227359,grade301416
 575496,crsCode322020,semester980653,grade249387
 216056,crsCode671279,semester470613,grade418180
