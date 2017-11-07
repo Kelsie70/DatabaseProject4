@@ -1,15 +1,15 @@
 
 -- Query 1
-SELECT name FROM Students WHERE id = 5101;
+SELECT name FROM Student WHERE id = 5101;
 
 -- Query 2
-SELECT name FROM Students WHERE id < 15000 AND id > 10000;
+SELECT name FROM Student WHERE id < 15000 AND id > 10000;
 
 -- Query 3
-SELECT name FROM Students s, Transcript t WHERE s.id = t.studId AND t.crsCode = 'crsCode394193';
+SELECT name FROM Student s, Transcript t WHERE s.id = t.studId AND t.crsCode = 'crsCode394193';
 
 -- Query 4
-SELECT s.name FROM Students s, Transcript t, Teaching h, Professor p WHERE 
+SELECT s.name FROM Student s, Transcript t, Teaching h, Professor p WHERE 
 s.id = t.studId
 AND t.semester = h.semester
 AND t.crsCode = h.crsCode
