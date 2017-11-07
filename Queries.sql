@@ -30,10 +30,11 @@ AND T.crsCode = C.crsCode
 AND C.deptID = 'deptId254977');
 
 --Query 6
+SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 SELECT S.name
 FROM Student S, Transcript T 
 WHERE S.id = T.studID
-	T.crsCode IN
-	(SELECT T.crsCode FROM Course C WHERE C.deptID = 'deptId859888')
+AND T.crsCode IN
+	(SELECT T.crsCode FROM Courses C WHERE C.deptID = 'deptId859888')
 GROUP BY T.studID
-HAVING COUNT(*) = (SELECT COUNT(*) FROM Course C WHERE C.deptID = 'deptId859888');
+HAVING COUNT(*) = (SELECT COUNT(*) FROM Courses C WHERE C.deptID = 'deptId859888');
