@@ -20,16 +20,14 @@ AND p.name = 'name296707';
 SELECT S.name
 FROM Student S, Transcript T, Courses C
 WHERE S.id = T.studId
-	T.crsCode = C.crsCode
-	C.deptID = 'deptId859888'
-
-MINUS
-
+AND T.crsCode = C.crsCode
+AND C.deptID = 'deptId859888'
+AND NOT EXISTS (
 SELECT S.name
 FROM Student S, Transcript T, Courses C
 WHERE S.id = T.studID
-	T.crsCode = C.crsCode
-	C.deptID = 'deptId254977';
+AND T.crsCode = C.crsCode
+AND C.deptID = 'deptId254977');
 
 --Query 6
 SELECT S.name
