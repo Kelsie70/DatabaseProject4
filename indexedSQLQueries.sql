@@ -31,13 +31,13 @@ CREATE INDEX teaching_crs_code
 ON db_project_4.teaching (crsCode);
 
 SELECT name
-FROM db_project_4.professors
-USE INDEX(prof_id)
-WHERE id = 7522;
+FROM db_project_4.students
+USE INDEX(stud_id)
+WHERE id = 62053;
 
 SELECT name
-FROM db_project_4.professors
-USE INDEX(prof_id)
+FROM db_project_4.students
+USE INDEX(stud_id)
 WHERE id > 10000 AND id < 15000; 
 
 SELECT name
