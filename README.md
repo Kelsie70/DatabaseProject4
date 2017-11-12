@@ -13,6 +13,22 @@ These queries were completed for MySQL and PostgreSQL, for both non-indexed and 
 
 Manager Report:
 
+According to the data that we received, our times never seemed to be very high, but we did have
+a few surprises in our data. 
 
-Manager Evaluations:
+Group Member Contributions and Evaluations:
+
+Kelsie Belan (Project Manager) Implemented indexed MySQL queries, created Github repo
+
+Devin Gray (manager evaluation: +2) Implemented PostgreSQL queries, created graph of data
+
+Kyle Millar (manager evaluation: +2) Implemented non indexed MySQL queries
+
+Anish Shivkumar (manager evaluation: +2) Implemented non indexed MySQL queries
+
+Schedule of Meetings
+
+11/1/17 (full attendance)
+
+11/5/17 (full attendance)
 
