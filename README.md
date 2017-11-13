@@ -11,10 +11,19 @@ Queries:
 
 These queries were completed for MySQL and PostgreSQL, for both non-indexed and indexed queries.
 
+________________________________________________________________________________________
+
 Manager Report:
 
-According to the data that we received, our times never seemed to be very high, but we did have
-a few surprises in our data. 
+In our queries, we used tables that contained 10,000 tuples each. With this amount of tuples,
+we were pleased that our times never exceeded over a half of second when processing each
+query that we wrote. Out of the two languages, our PostgreSQL queries seemed to be the slowest.
+Between the indexed and non-indexed queries for MySQL, we saw that the indexed times were
+generally slower than the non-indexed times, which is contrary to the idea of indexing, which
+is supposed to speed up this process. Between the indexed and non-indexed queries for PostgreSQL,
+however, our indexed queries acted as planned and were faster than the non-indexed queries.
+
+________________________________________________________________________________________
 
 Group Member Contributions and Evaluations:
 
@@ -25,6 +34,8 @@ Devin Gray (manager evaluation: +2) Implemented PostgreSQL queries, created grap
 Kyle Millar (manager evaluation: +2) Implemented non indexed MySQL queries
 
 Anish Shivkumar (manager evaluation: +2) Implemented non indexed MySQL queries
+
+________________________________________________________________________________________
 
 Schedule of Meetings
 
